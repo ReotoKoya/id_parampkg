@@ -7,7 +7,7 @@ from rclpy.node import Node
 from std_msgs.msg import Int16
 
 rclpy.init() 
-node = Node("all_id_pub")
+node = Node("id_pub")
 
 node.declare_parameter("all_id_param", ["1001", "1002"])
 id_param = node.get_parameter("all_id_param").value
