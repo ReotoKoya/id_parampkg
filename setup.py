@@ -10,6 +10,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', id_parampkg, 'config'), global('config/*.ymal')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,6 +25,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'id_talker = id_parampkg.id_param_talker:main',
+            'id_listener = id_parampkg.id_param_listener:main',
         ],
     },
 )
