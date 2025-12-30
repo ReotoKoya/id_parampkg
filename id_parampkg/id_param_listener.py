@@ -15,8 +15,12 @@ id_param = node.get_parameter("allowed_id_param").value
 
 def cb(msg):
     global node
-    node.get_logger().info("id_sub: %s" % msg)
 
+    if msg.data in id_param:
+        node.get_logger().info("pass: %s" % msg)
+
+    else:
+        pass
 
 def main():
     sub = node.create_subscription(Int16, "id", cb, 10)
