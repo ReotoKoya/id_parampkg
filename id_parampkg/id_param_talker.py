@@ -4,7 +4,7 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
+from std_msgs.msg import String
 
 rclpy.init() 
 node = Node("id_talker")
@@ -21,7 +21,7 @@ def cb():
     if len(id_param) == 0:
         return
 
-    msg = Int16()
+    msg = String()
     msg.data = id_param[n]
     pub.publish(msg)
     n += 1
