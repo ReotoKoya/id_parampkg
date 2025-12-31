@@ -5,6 +5,13 @@
 ## 概要
 - リストにある全てのIDから, 許可リストにあるIDのみを出力するフィルタパッケージです.
 
+## ノード
+
+トピック: id
+メッセージ型: std_msgs/msg/Int16
+パブリッシャ―: id_talker 
+サブスクライバー: id_listener
+
 ## 実行環境
 - Ubuntu 22.04 LTS on Windows
 - ROS 2 Humble Hawksbill
