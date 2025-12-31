@@ -9,7 +9,7 @@ from std_msgs.msg import Int16
 rclpy.init() 
 node = Node("id_talker")
 
-node.declare_parameter("all_id_param", [1001, 1002])
+node.declare_parameter("all_id_param", [1, 2])
 id_param = node.get_parameter("all_id_param").value
 
 pub = node.create_publisher(Int16, "id", 10)

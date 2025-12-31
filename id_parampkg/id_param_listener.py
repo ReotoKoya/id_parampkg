@@ -9,7 +9,7 @@ from std_msgs.msg import Int16
 rclpy.init()
 node = Node("id_listener")
 
-node.declare_parameter("allowed_id_param", [1003, 1020])
+node.declare_parameter("allowed_id_param", [3, 8])
 id_param = node.get_parameter("allowed_id_param").value
 
 
@@ -17,7 +17,7 @@ def cb(msg):
     global node
 
     if msg.data in id_param:
-        node.get_logger().info("pass: %s" % msg)
+        node.get_logger().info("pass: %s" % msg.data)
 
     else:
         pass
