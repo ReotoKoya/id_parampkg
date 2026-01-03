@@ -24,31 +24,24 @@ grep 'pass: 8'
 
 #テスト2: 許可リスト外のものを通過させていないかのテスト.
 timeout 1 ros2 launch id_parampkg passfilter.launch.py > /tmp/id_parampkg.log
-cat /tmp/id_parampkg.log |
-grep 'pass: 1'
+cat /tmp/id_parampkg.log | ! grep 'pass: 1'
 
 timeout 2 ros2 launch id_parampkg passfilter.launch.py > /tmp/id_parampkg.log
-cat /tmp/id_parampkg.log |
-grep 'pass: 2'
+cat /tmp/id_parampkg.log | ! grep 'pass: 2'
 
 timeout 4 ros2 launch id_parampkg passfilter.launch.py > /tmp/id_parampkg.log
-cat /tmp/id_parampkg.log |
-grep 'pass: 4'
+cat /tmp/id_parampkg.log | ! grep 'pass: 4'
 
 timeout 6 ros2 launch id_parampkg passfilter.launch.py > /tmp/id_parampkg.log
-cat /tmp/id_parampkg.log |
-grep 'pass: 6'
+cat /tmp/id_parampkg.log | ! grep 'pass: 6'
 
 
 timeout 7 ros2 launch id_parampkg passfilter.launch.py > /tmp/id_parampkg.log
-cat /tmp/id_parampkg.log |
-grep 'pass: 7'
+cat /tmp/id_parampkg.log | ! grep 'pass: 7'
 
 
 timeout 9 ros2 launch id_parampkg passfilter.launch.py > /tmp/id_parampkg.log
-cat /tmp/id_parampkg.log |
-grep 'pass: 9'
+cat /tmp/id_parampkg.log | ! grep 'pass: 9'
 
 timeout 10 ros2 launch id_parampkg passfilter.launch.py > /tmp/id_parampkg.log
-cat /tmp/id_parampkg.log |
-grep 'pass: 10'
+cat /tmp/id_parampkg.log | ! grep 'pass: 10'
