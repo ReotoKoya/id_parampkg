@@ -7,10 +7,10 @@
 
 ## ノード
 
-トピック: id
-メッセージ型: std_msgs/msg/Int16
-パブリッシャ―: id_talker 
-サブスクライバー: id_listener
+- トピック: id
+- メッセージ型: std_msgs/msg/Int16
+- パブリッシャ―: id_talker 
+- サブスクライバー: id_listener
 
 ## 実行環境
 - Ubuntu 22.04 LTS on Windows
