@@ -30,6 +30,7 @@ setup(
         'console_scripts': [
             'id_talker = id_parampkg.id_param_talker:main',
             'id_listener = id_parampkg.id_param_listener:main',
+            'id_filter = id_parampkg.id_filter_node:main',
         ],
     },
 )
