@@ -9,23 +9,12 @@
 
 - トピック: id
 - メッセージ型: std_msgs/msg/Int16
-- パブリッシャ―: id_talker 
-- サブスクライバー: id_listener
+- ノード名: id_talker 
+- ノード名: id_listener
 
 ## 実行環境
 - Ubuntu 22.04 LTS on Windows
 - ROS 2 Humble Hawksbill
-
-## 準備
-- 以下のコマンドを上から順に実行してください.
-
-  ```
-  $ cd  ~/ros2_ws/src
-  ~/ros2_ws/src$ git clone https://github.com/ReotoKoya/id_parampkg.git
-  ~/ros2_ws/src$ cd ~/ros2_ws
-  ~/ros2_ws$ colcon build
-  ~/ros2_ws$ source install/setup.bash
-  ```
 
 ## 実行方法
 -以下のコマンドを任意のディレクトリで実行してください.
@@ -47,18 +36,11 @@
   [id_listener-2] [INFO] [1767191125.123733079] [id_listener]: pass: 3
   [id_listener-2] [INFO] [1767191126.070253071] [id_listener]: pass: 5
   [id_listener-2] [INFO] [1767191127.563359766] [id_listener]: pass: 8
-  ```
-
-## テストの実行法
-
-  ```
-  ~/ros2_ws/src/id_parampkg/test$ ./test.bash
-  ```
 
 ## テスト環境
-- Ubuntu 22.04 LTS on Windows
-- GitHub Actions on Windows
-- ROS 2 Humble Hawksbill
+- Local: Ubuntu 22.04 LTS on Windows 11
+- ROS: ROS 2 Humble Hawksbill
+- GitHub Actions: Ubuntu 22.04 
 
 ## 著作権 ・ライセンス
 - このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます．
