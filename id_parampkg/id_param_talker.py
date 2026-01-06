@@ -12,7 +12,7 @@ node = Node("id_talker")
 node.declare_parameter("all_id_param", [1, 2])
 id_param = node.get_parameter("all_id_param").value
 
-pub = node.create_publisher(Int16, "id", 10)
+pub = node.create_publisher(Int16, "input_id", 10)
 n = 0
 
 def cb():
