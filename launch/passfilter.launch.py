@@ -13,12 +13,20 @@ def generate_launch_description():
         package='id_parampkg',
         executable='id_talker',
         parameters=[config],
+        output='screen'
         )
+
     id_param_listener = launch_ros.actions.Node(
         package='id_parampkg',
         executable='id_listener',
         parameters=[config],
         output='screen'
         )
-    
-    return launch.LaunchDescription([id_param_talker, id_param_listener])
+
+    id_filter_node = launch_ros.actions.Node(
+        package='id_parampkg',
+        executable='id_filter',
+        parameters=[config],
+        )
+
+    return launch.LaunchDescription([id_param_talker, id_param_listener, id_filter_node])
