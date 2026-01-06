@@ -10,7 +10,6 @@ def cb(msg):
     global node, id_param
 
     if msg.data in id_param:
-        node.get_logger().info("pass: %s" % msg.data)
         pub.publish(msg)    
     else:
         pass
