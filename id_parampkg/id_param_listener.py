@@ -9,10 +9,6 @@ from std_msgs.msg import Int16
 rclpy.init()
 node = Node("id_listener")
 
-node.declare_parameter("allowed_id_param", [3, 8])
-id_param = node.get_parameter("allowed_id_param").value
-
-
 def cb(msg):
     global node
 
@@ -23,5 +19,5 @@ def cb(msg):
         pass
 
 def main():
-    sub = node.create_subscription(Int16, "id", cb, 10)
+    sub = node.create_subscription(Int16, "filtered_id", cb, 10)
     rclpy.spin(node)
