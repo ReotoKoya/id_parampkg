@@ -5,4 +5,8 @@ id_talker:
 
 id_listener:
   ros__parameters:
-    allowed_id_param: [3, 5, 8]                     
+    allowed_id_param: [3, 5, 8]
+
+id_filter:
+  ros__parameters:
+    allowed_id_param: [3, 5, 8]                    
