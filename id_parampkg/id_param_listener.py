@@ -9,6 +9,9 @@ from std_msgs.msg import Int16
 rclpy.init()
 node = Node("id_listener")
 
+node.declare_parameter("allowed_id_param", [3, 8])
+id_param = node.get_parameter("allowed_id_param").value
+
 def cb(msg):
     global node
 
