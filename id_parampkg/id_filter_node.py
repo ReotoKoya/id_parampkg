@@ -20,7 +20,7 @@ def main():
     rclpy.init()
     node = Node("id_filter")
 
-    node.declare_parameter("allowed_id_param", [])
+    node.declare_parameter("allowed_id_param", [0])
     id_param = node.get_parameter("allowed_id_param").value
 
     sub = node.create_subscription(Int16, "input_id", cb, 10)
