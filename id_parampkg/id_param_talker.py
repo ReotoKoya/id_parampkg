@@ -22,7 +22,7 @@ def cb():
         return
 
     msg = Int16()
-    msg.data = id_param[n]
+    msg.data = id_param[n % len(id_param)]
     pub.publish(msg)
     node.get_logger().info("sent: %s" % msg.data)
     n += 1
