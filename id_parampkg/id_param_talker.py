@@ -24,6 +24,7 @@ def cb():
     msg = Int16()
     msg.data = id_param[n]
     pub.publish(msg)
+    node.get_logger().info("sent: %s" % msg.data)
     n += 1
 
 def main():
