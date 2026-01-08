@@ -19,7 +19,7 @@
   - メッセージ型: std_msgs/msg/Int16
 
 ### id_listener
--  filtered_idからフィルタリングされて通過した数値を受け取り, ログに出力する.
+- filtered_idからフィルタリングされて通過した数値を受け取り, ログに出力する.
   - 入力トピック名: filtered_id
   - メッセージ型: std_msgs/msg/Int16
 
@@ -51,6 +51,7 @@
 ### 補足
 実行例では1から60の数値しか送信していませんが, 1から60までの数値でなくても, 構いません.\ 
 launchファイルの実行を止めたい場合は, キーボードで「Ctrl + C　」を押してください.
+テストで使用しているyqコマンドは, 「sudo snap install yq」でインストールできます.
 
 ## テスト環境
 - Local: Ubuntu 22.04 LTS on Windows 11
@@ -66,3 +67,4 @@ launchファイルの実行を止めたい場合は, キーボードで「Ctrl +
 - [第8回 : Robot Operating System (ROS 2)](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson8.html)
 - [第9回 : ROS 2の通信と型](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson9.html)
 - [第10回 : ROSシステムのテスト](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson10.html)
+- [【yqコマンド活用】yqコマンドでYAMLファイルを自由自在に操作する](https://deep.tacoskingdom.com/blog/203)
