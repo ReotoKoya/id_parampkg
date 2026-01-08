@@ -30,13 +30,6 @@
 - Ubuntu 22.04 LTS on Windows
 - ROS 2 Humble Hawksbill
 
-## 実行方法
--以下のコマンドを任意のディレクトリで実行してください.
-
-  ```
-  $ ros2 launch id_parampkg passfilter.launch.py
-  ```
-
 ### 実行例
 - yamlファイルに記述した1から10の数値リストの中から\ 
   許可リストにある3, 5, 8の数値のみをパスする例です.
