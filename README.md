@@ -10,7 +10,7 @@
 ### id_talker
 - yamlファイルを読み込み, 全体リストにある数値を繰り返し送信します.
 
-出力先トピック名: input_id\
+出力トピック名: input_id\
     メッセージ型: std_msgs/msg/Int16
 
 ### id_filter
