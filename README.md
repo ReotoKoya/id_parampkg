@@ -10,21 +10,21 @@
 ### id_talker
 - yamlファイルを読み込み, 全体リストにある数値を繰り返し送信します.
 
-| 出力先トピック名 | input_id | 
-| メッセージ型 | std_msgs/msg/Int16 | 
+出力先トピック名: input_id\
+    メッセージ型: std_msgs/msg/Int16
 
 ### id_filter
 - input_idに流れた数値をフィルタリングし, yamlファイルの許可リストにある数値のみfiltered_idに出力する.
 
-| 入力トピック名 | input_id |
-| 出力トピック名 | filtered_id |
-| メッセージ型 | std_msgs/msg/Int16 |
+入力トピック名: input_id\
+出力トピック名: filtered_id\
+  メッセージ型: std_msgs/msg/Int16
 
 ### id_listener
 -  filtered_idからフィルタリングされて通過した数値を受け取り, ログに出力する.
 
-| 入力トピック名 | filtered_id |
-| メッセージ型 | std_msgs/msg/Int16 |
+入力トピック名: filtered_id\
+  メッセージ型: std_msgs/msg/Int16
 
 ## 実行環境
 - Ubuntu 22.04 LTS on Windows
