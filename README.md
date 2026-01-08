@@ -20,7 +20,7 @@
 
 ### id_listener
 -  filtered_idからフィルタリングされて通過した数値を受け取り, ログに出力する.
-  - 入力トピック名: filtered_id\
+  - 入力トピック名: filtered_id
   - メッセージ型: std_msgs/msg/Int16
 
 ## 実行例
