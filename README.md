@@ -23,10 +23,6 @@
   - 入力トピック名: filtered_id\
   - メッセージ型: std_msgs/msg/Int16
 
-## 実行環境
-- Ubuntu 22.04 LTS on Windows
-- ROS 2 Humble Hawksbill
-
 ### 実行例
 - yamlファイルに記述した1から10の数値リストの中から\ 
   許可リストにある3, 5, 8の数値のみをパスする例です.
