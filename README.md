@@ -48,6 +48,10 @@
   [id_talker-1] [INFO] [1767846485.625710960] [id_talker]: sent: 9
   ```
 
+### 補足
+実行例では1から60の数値しか送信していませんが, 1から60までの数値でなくても, 構いません.\ 
+launchファイルの実行を止めたい場合は, キーボードで「Ctrl + C　」を押してください.
+
 ## テスト環境
 - Local: Ubuntu 22.04 LTS on Windows 11
 - ROS: ROS 2 Humble Hawksbill
