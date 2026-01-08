@@ -1,16 +1,22 @@
-# IDフィルタパッケージ
+# 数値フィルタパッケージ
 
 ![test](https://github.com/ReotoKoya/id_parampkg/actions/workflows/test.yml/badge.svg)
 
 ## 概要
-- リストにある全てのIDから, 許可リストにあるIDのみを出力するフィルタパッケージです.
+- 入力される数値から, 許可リストにある数値のみを出力するフィルタパッケージです.
+  許可リストの数値はyamlファイルを編集すれば書き換えられます.
 
-## ノード
+## 各ノード説明
+###id_talker
+- yamlファイルを読み込み, 全体リストにある数値を繰り返し送信します.
+| 出力先トピック名 | input_id |
+| :------------------------: |
+| メッセージ: std_msgs/msg/Int16 |
 
-- トピック: id
-- メッセージ型: std_msgs/msg/Int16
-- ノード名: id_talker 
-- ノード名: id_listener
+###id_filter_node
+| 出力先トピック名 | メッセージ | 機能 |
+
+
 
 ## 実行環境
 - Ubuntu 22.04 LTS on Windows
