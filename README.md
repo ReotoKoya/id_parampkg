@@ -68,3 +68,4 @@ launchファイルの実行を止めたい場合は, キーボードで「Ctrl +
 - [第9回 : ROS 2の通信と型](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson9.html)
 - [第10回 : ROSシステムのテスト](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson10.html)
 - [【yqコマンド活用】yqコマンドでYAMLファイルを自由自在に操作する](https://deep.tacoskingdom.com/blog/203)
+-[シェルスクリプトでapt-getのY/nを手動で打ち込まなくてもよいようにしたい](https://ja.stackoverflow.com/questions/12249/%e3%82%b7%e3%82%a7%e3%83%ab%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e3%81%a7apt-get%e3%81%aey-n%e3%82%92%e6%89%8b%e5%8b%95%e3%81%a7%e6%89%93%e3%81%a1%e8%be%bc%e3%81%be%e3%81%aa%e3%81%8f%e3%81%a6%e3%82%82%e3%82%88%e3%81%84%e3%82%88%e3%81%86%e3%81%ab%e3%81%97%e3%81%9f%e3%81%84)
