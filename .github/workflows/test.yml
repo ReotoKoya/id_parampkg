@@ -7,7 +7,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: yq install
-        run: apt-get update && apt-get -y install yq 
+        run: |
+          apt-get update && apt-get -y install curl
+          curl -LJO https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          mv yq_linux_amd64 /usr/local/bin/yq
+          chmod a+x /usr/bin/yq
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/id_parampkg/
